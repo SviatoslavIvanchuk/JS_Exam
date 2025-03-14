@@ -1,0 +1,103 @@
+.wrap-page {
+    align-items: center;
+}
+
+#user {
+    padding: 40px 0 0;
+    align-items: center;
+    width: 90%;
+    margin-top: 16vh;
+    min-height: 40vh;
+    background: white;
+    border-radius: 50px;
+    box-shadow: 0 10px 12px 2px rgba(215, 215, 215, 0.3);
+    gap: 28px;
+}
+
+#user .user-title h2 {
+    font-size: 40px;
+}
+
+#user .user-title h2 span {
+    font-size: 22px;
+    opacity: 0.5;
+}
+
+#user .user-info {
+    align-items: start;
+    gap: 6vw;
+}
+
+#user .user-info h4 {
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+#user .user-info ul li {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+#user .user-info div:nth-child(1) ul li:nth-last-child(1) ul li {
+    margin-left: 16px;
+}
+
+#user button.show-posts {
+    width: 100%;
+    height: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+    font-size: 20px;
+    font-weight: 450;
+}
+
+#user .show-posts:hover {
+    background: #6246EA;
+    color: snow;
+}
+
+/*---------------POST BLOCK---------------*/
+#posts {
+    width: 90%;
+    gap: 28px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 40px;
+}
+
+#posts .post-block {
+    position: relative;
+    padding: 28px;
+    border-radius: 20px;
+    gap: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
+    transition: 0.2s;
+}
+
+#posts .post-block h4 {
+    font-size: 20px;
+}
+
+#posts .post-block a {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    right: 5px;
+    bottom: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: snow;
+    box-shadow: 0 0 12px 5px rgba(215, 215, 215, 0.3);
+}
+
+#posts .post-block a:hover {
+    background: #6246EA;
+    color: snow;
+}
