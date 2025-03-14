@@ -28,6 +28,10 @@ fetchData(`${postsURL}/${postID}`)
 fetchData(`${commentsURL}`)
     .then(comments => {
         const commentsCurrentPost = comments.filter((comment) => comment.postId === +postID);
+        if (commentsCurrentPost.length === 0) {
+            alert("Не знайдено сторінки з постом");
+            window.location.href = "index.html";
+        }
 
         const commentsSection = document.getElementById('comments');
 
